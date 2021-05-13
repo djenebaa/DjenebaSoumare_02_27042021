@@ -1,0 +1,31 @@
+html {
+  background-color: #f2f2f2;
+}
+* {
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+}
+a {
+  color: initial;
+}
+
+nav {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.logo {
+  align-items: flex-start;
+}
+
+a:active,
+a:link,
+a:hover,
+a:active,
+a:focus {
+  color: #0065fc;
+  text-decoration: #0065fc;
+}
