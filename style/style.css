@@ -1,5 +1,5 @@
 html {
-  background-color: #f2f2f2;
+  background-color: white;
 }
 * {
   font-family: Raleway, sans-serif;
@@ -8,10 +8,15 @@ html {
 a {
   color: initial;
 }
-
+img {
+  min-height: 50px;
+  max-height: 100px;
+}
+/* ****************Navigation**************** */
 nav {
   margin: 0px;
-  padding: 0px;
+  padding-bottom: 0px;
+  height: 5em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -20,11 +25,7 @@ nav {
 #logo {
   align-items: flex-start;
 }
-img {
-  min-height: 50px;
-  max-height: 100px;
-}
-a:hover {
+nav a:hover {
   border-top: 3px solid;
   border-color: #0065fc;
   color: #0065fc;
@@ -52,21 +53,70 @@ div.location .activate {
   grid-column: 2/3;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 #Navigation .Activites {
   grid-column: 3/4;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 #Navigation .Inscription {
   grid-column: 4/5;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .Inscription a {
   color: #0065fc;
   text-decoration: none;
   border-top: none;
+}
+/* ******************Barre-de-recherche**************** */
+#Recherche h2 {
+  font-weight: bold;
+  font-size: 2em;
+  display: flex;
+}
+#Recherche {
+  padding: 15px;
+}
+label,
+input {
+  display: table-row;
+}
+input[type="submit"] {
+  background-color: #0065fc;
+  color: white;
+  border-radius: 0 1em 1em 0;
+  height: 4em;
+  padding-right: 10px;
+  border: #0065fc;
+  font-weight: bold;
+}
+.Search {
+  padding: 1em;
+}
+input[type="search"] {
+  height: 4em;
+  margin-left: -3px;
+  font-weight: bold;
+  border: #f2f2f2;
+}
+
+span i {
+  background-color: #f2f2f2;
+  padding: 18px;
+  border-radius: 1em 0 0 1em;
+}
+div,
+h3,
+ul {
+  display: inline-block;
+}
+ul li {
+  list-style-type: none;
+  display: inline-block;
 }
 @media screen and (max-width: 700px) {
   #Navigation {

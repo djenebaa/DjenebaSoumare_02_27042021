@@ -20,14 +20,14 @@
         <div id="logo">
             <img src="Projet2-Reservia/images/logo/LogoReservia.png " alt="Reservia" style="height: 50px;">
         </div>
-        <div class="location"> 
+         <div class="location"> 
                 <a href="#Hebergements" class="activate">Hébergement</a>  
-        </div>   
-        <div class="Activites"> 
+         </div>   
+         <div class="Activites"> 
                 <a href="#Activites" >Activités</a>
-        </div>
+         </div>
         <div class="Inscription">
-                <a href="#S'inscrire">S'inscrire</a>
+               <a href="#S'inscrire" >S'inscrire</a>
         </div>
      </nav>
     </header>
@@ -37,11 +37,17 @@
  <section id="Recherche">
      <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
      <p>En plein centre ville ou en pleine nature</p>
-     <div id="Barrederecherche">
-         <input type="search" placeholder="Marseille,France"><a href="#">Recherche</a>
-     </div>
+        <form action="Searchbar" method="GET" class="Recherche">
+         <div class="Search">
+            <span class="Position">
+            <i class="fas fa-map-marker-alt" ></i>
+            </span>
+            <input type="search" placeholder="Marseille,France">
+            <input type="submit" value="Rechercher">
+         </div>
+        </form>
      <div id="Filtres">
-      <h2>Filtres</h2>
+      <h3>Filtres</h3>
       <ul>
           <li>Economique</li>
           <li>Familial</li>
