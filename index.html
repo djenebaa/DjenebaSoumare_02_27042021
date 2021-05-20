@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Réservia</title>
+    <title>Reservia</title>
 
     <!-- ************Style******************** -->
      <link rel="stylesheet" href="style/style.css">
@@ -44,6 +44,9 @@
             </span>
             <input type="search" placeholder="Marseille,France">
             <input type="submit" value="Rechercher">
+            <span class="Logoloupe">
+             <i class="fas fa-search"></i>
+            </span>
          </div>
         </form>
      <div id="Filtres">
@@ -81,11 +84,13 @@
               <figcaption>Auberge la Cannebière</figcaption> 
              </figure>
              <p>Nuit à partir de 25&euro;</p>
-             <i class="fas fa-star"></i>
-             <i class="fas fa-star"></i>
-             <i class="fas fa-star"></i>
-             <i class="fas fa-star"></i>
-             <i class="fas fa-star"></i>
+             <div class="Etoile">
+             <i class="fas fa-star" data-active="true"></i>
+             <i class="fas fa-star" data-active="true"></i>
+             <i class="fas fa-star" data-active="true"></i>
+             <i class="fas fa-star" data-active="true"></i>
+             <i class="fas fa-star" data-active="false"></i>
+             </div>
          </div>
          <div class="room">       
              <figure>
@@ -93,23 +98,27 @@
               <figcaption>Hôtel du port</figcaption>
              </figure>
               <p>Nuit à partir de 52&euro;</p>
-             <i class="fas fa-star"></i>
-             <i class="fas fa-star"></i>
-             <i class="fas fa-star"></i>
-             <i class="fas fa-star"></i>
-             <i class="fas fa-star"></i>
+            <div class="Etoile">
+             <i class="fas fa-star" data-active="true"></i>
+             <i class="fas fa-star" data-active="true"></i>
+             <i class="fas fa-star" data-active="true"></i>
+             <i class="fas fa-star" data-active="true"></i>
+             <i class="fas fa-star" data-active="true"></i>
+           </div>
         </div>
          <div class="room">
             <figure>
              <img src="Projet2-Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"  alt="Image Hotel les mouettes">
              <figcaption>Hôtel les mouettes </figcaption>
             </figure>
-             <p>Nuit à partir de 76&euro;</p>            
-             <i class="fas fa-star"></i>
-             <i class="fas fa-star"></i>
-             <i class="fas fa-star"></i>
-             <i class="fas fa-star"></i>
-             <i class="fas fa-star"></i>
+             <p>Nuit à partir de 76&euro;</p>   
+             <div class="Etoile">
+              <i class="fas fa-star" data-active="true"></i>
+              <i class="fas fa-star" data-active="true"></i>
+              <i class="fas fa-star" data-active="true"></i>
+              <i class="fas fa-star" data-active="true"></i>
+              <i class="fas fa-star" data-active="false"></i>
+             </div>
          </div>
         <div class="room">
             <figure>
@@ -117,11 +126,13 @@
              <figcaption>Hôtel de la mer </figcaption>
             </figure>
              <p>Nuit à partir de 46&euro;</p>
-             <i class="fas fa-star"></i>
-             <i class="fas fa-star"></i>
-             <i class="fas fa-star"></i>
-             <i class="fas fa-star"></i>
-             <i class="fas fa-star"></i>
+             <div class="Etoile">
+              <i class="fas fa-star" data-active="true"></i>
+              <i class="fas fa-star" data-active="true"></i>
+              <i class="fas fa-star" data-active="true"></i>
+              <i class="fas fa-star" data-active="false"></i>
+              <i class="fas fa-star" data-active="false"></i>
+             </div>
         </div>
         <div class="room">  
             <figure>       
@@ -129,11 +140,13 @@
              <figcaption>Auberge le Panier </figcaption>
             </figure>
              <p>Nuit à partir de 23&euro;</p>
-             <i class="fas fa-star"></i>
-             <i class="fas fa-star"></i>
-             <i class="fas fa-star"></i>
-             <i class="fas fa-star"></i>
-             <i class="fas fa-star"></i>
+             <div class="Etoile">
+              <i class="fas fa-star" data-active="true"></i>
+              <i class="fas fa-star" data-active="true"></i>
+              <i class="fas fa-star" data-active="true"></i>
+              <i class="fas fa-star" data-active="true"></i>
+              <i class="fas fa-star" data-active="false"></i>
+            </div>
         </div>
         <div class="room">
             <figure>
@@ -141,11 +154,13 @@
              <figcaption>Hôtel chez Amina</figcaption>
             </figure>
              <p>Nuit à partir de 96&euro;</p>
-             <i class="fas fa-star"></i>
-             <i class="fas fa-star"></i>
-             <i class="fas fa-star"></i>
-             <i class="fas fa-star"></i>
-             <i class="fas fa-star"></i>
+             <div class="Etoile">
+              <i class="fas fa-star" data-active="true"></i>
+              <i class="fas fa-star" data-active="true"></i>
+              <i class="fas fa-star" data-active="true"></i>
+              <i class="fas fa-star" data-active="true"></i>
+              <i class="fas fa-star" data-active="false"></i>
+             </div>
         </div> 
         <p>Afficher plus</p>
       </div>
@@ -158,6 +173,13 @@
             <figcaption>Hôtel Le soleil du matin </figcaption>
             </figure>
             <p>Nuit à partir de 128&euro;</p>
+                <div class="Star">
+                <i class="fas fa-star" data-active="true"></i>
+                <i class="fas fa-star" data-active="true"></i>
+                <i class="fas fa-star" data-active="true"></i>
+                <i class="fas fa-star" data-active="true"></i>
+                <i class="fas fa-star" data-active="true"></i>
+                </div>
         </div>
         <div class="MostPopular">
             <figure>
@@ -165,6 +187,13 @@
             <figcaption> Au coeur de l'eau Chambres d'hôtes </figcaption>
             </figure>
             <p>Nuit à partir de 71&euro;</p>
+                <div class="Star">
+                <i class="fas fa-star" data-active="true"></i>
+                <i class="fas fa-star" data-active="true"></i>
+                <i class="fas fa-star" data-active="true"></i>
+                <i class="fas fa-star" data-active="true"></i>
+                <i class="fas fa-star" data-active="false"></i>
+                </div>
         </div>
         <div class="MostPopular">
             <figure>
@@ -172,6 +201,13 @@
             <figcaption>Hôtel Tout bleu et Blanc</figcaption>
             </figure>
             <p>Nuit à partir de 68&euro;</p>
+                <div class="Star">
+                <i class="fas fa-star" data-active="true"></i>
+                <i class="fas fa-star" data-active="true"></i>
+                <i class="fas fa-star" data-active="true"></i>
+                <i class="fas fa-star" data-active="true"></i>
+                <i class="fas fa-star" data-active="false"></i>
+                </div>
         </div>
      </div>
  </section>
@@ -181,28 +217,40 @@
     <h2>Activités à Marseille</h2>
  <div id ="Activites">
    <div class="Grande-image1">
-      <img src="Projet2-Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Image Vieux port" >
-      <h3>Vieux Port</h3>
+       <a href="#">
+        <figure>
+        <img src="Projet2-Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Image Vieux port" >
+        <figcaption>Vieux Port</figcaption> </figure></a>
    </div>
    <div class="Normal-image1">
-    <img src="Projet2-Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Image Fort de pomegues" >
-    <h3>Fort de Pomègues</h3>
+      <a href="#">
+        <figure>
+        <img src="Projet2-Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Image Fort de pomegues" >
+        <figcaption>Fort de Pomègues </figcaption> </figure></a>
    </div>
    <div class="Normal-image2">
-    <img src="Projet2-Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Image Iles du Frioul " >
-    <h3>Iles du Frioul</h3>
+       <a href="#">
+           <figure>
+          <img src="Projet2-Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Image Iles du Frioul " >
+          <figcaption>Iles du Frioul </figcaption></figure></a>
    </div>
    <div class="Grande-image2">
-    <img src="Projet2-Reservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Image Parc National des Calanques" >
-    <h3>Parc National des Calanques</h3>
+       <a href="#">
+           <figure>
+           <img src="Projet2-Reservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Image Parc National des Calanques" >
+          <figcaption>Parc National des Calanques</figcaption></figure></a>
    </div>
    <div class="Normal-image3">
-    <img src="Projet2-Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Image Notre-Dame-de-la-Garde" >
-    <h3>Notre-Dame-de-la-Garde</h3>
+       <a href="#">
+           <figure>
+          <img src="Projet2-Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Image Notre-Dame-de-la-Garde" >
+          <figcaption>Notre-Dame-de-la-Garde</figcaption></figure></a>
    </div>
    <div class="Normal-image4">
-    <img src="Projet2-Reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Image Parc Longchamp" >
-    <h3>Parc Longchamp </h3>
+       <a href="#">
+           <figure>
+           <img src="Projet2-Reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Image Parc Longchamp" >
+           <figcaption>Parc Longchamp </figcaption></figure></a>
    </div>
  </div>
 </section>
