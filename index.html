@@ -17,13 +17,11 @@
 
     <header>
      <nav id="Navigation">
-        <div id="logo">
+        <div class="logo">
             <img src="Projet2-Reservia/images/logo/LogoReservia.png " alt="Reservia" style="height: 50px;">
         </div>
-         <div class="location"> 
-                <a href="#Hebergements" class="activate">Hébergement</a>  
-         </div>   
-         <div class="Activites"> 
+         <div class="NavBar"> 
+                <a href="#Hebergements" data-active="true">Hébergements</a>   
                 <a href="#Activites" >Activités</a>
          </div>
         <div class="Inscription">
@@ -42,10 +40,10 @@
             <span class="Position">
             <i class="fas fa-map-marker-alt" ></i>
             </span>
-            <input type="search" placeholder="Marseille,France">
-            <input type="submit" value="Rechercher">
+            <input type="search" placeholder="Marseille,France">              
+            <input type="submit" value="Rechercher" disabled/> 
             <span class="Logoloupe">
-             <i class="fas fa-search"></i>
+              <i class="fas fa-search" data-active="false"></i>
             </span>
          </div>
         </form>
@@ -53,7 +51,7 @@
         <h2>Filtres</h2>
           <div class="bouton-Filtres" >
            <i class="fas fa-money-bill-wave"></i>
-           <span class="Economie">Economique</span>
+           <span class="Economie">Économique</span>
           </div>
 
           <div class="bouton-Filtres" >
@@ -79,6 +77,7 @@
      <div id="Hebergements-Marseille">
          <h2>Hébergements à Marseille</h2>
          <div class="room">    
+             <a href="#">
              <figure>      
               <img src="Projet2-Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg "  alt="Image Auberge la Cannebière" >
               <figcaption>Auberge la Cannebière</figcaption> 
@@ -90,9 +89,10 @@
              <i class="fas fa-star" data-active="true"></i>
              <i class="fas fa-star" data-active="true"></i>
              <i class="fas fa-star" data-active="false"></i>
-             </div>
+             </div></a>
          </div>
-         <div class="room">       
+         <div class="room">    
+             <a href="#">   
              <figure>
               <img src="Projet2-Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"  alt="Image Hotel du port" >
               <figcaption>Hôtel du port</figcaption>
@@ -104,9 +104,10 @@
              <i class="fas fa-star" data-active="true"></i>
              <i class="fas fa-star" data-active="true"></i>
              <i class="fas fa-star" data-active="true"></i>
-           </div>
+           </div></a>
         </div>
          <div class="room">
+             <a href="#">
             <figure>
              <img src="Projet2-Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"  alt="Image Hotel les mouettes">
              <figcaption>Hôtel les mouettes </figcaption>
@@ -118,9 +119,10 @@
               <i class="fas fa-star" data-active="true"></i>
               <i class="fas fa-star" data-active="true"></i>
               <i class="fas fa-star" data-active="false"></i>
-             </div>
+             </div></a>
          </div>
         <div class="room">
+            <a href="#">
             <figure>
              <img src="Projet2-Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"  alt="Image Hotel de la mer" >
              <figcaption>Hôtel de la mer </figcaption>
@@ -132,9 +134,10 @@
               <i class="fas fa-star" data-active="true"></i>
               <i class="fas fa-star" data-active="false"></i>
               <i class="fas fa-star" data-active="false"></i>
-             </div>
+             </div></a>
         </div>
         <div class="room">  
+            <a href="#">
             <figure>       
              <img src="Projet2-Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"  alt="Image Auberge le Panier" >   
              <figcaption>Auberge le Panier </figcaption>
@@ -146,9 +149,10 @@
               <i class="fas fa-star" data-active="true"></i>
               <i class="fas fa-star" data-active="true"></i>
               <i class="fas fa-star" data-active="false"></i>
-            </div>
+            </div></a>
         </div>
         <div class="room">
+           <a href="#">
             <figure>
              <img src="Projet2-Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Image Hotel chez Amina" >
              <figcaption>Hôtel chez Amina</figcaption>
@@ -159,15 +163,16 @@
               <i class="fas fa-star" data-active="true"></i>
               <i class="fas fa-star" data-active="true"></i>
               <i class="fas fa-star" data-active="true"></i>
-              <i class="fas fa-star" data-active="false"></i>
-             </div>
+              <i class="fas fa-star" data-active="true"></i>
+             </div></a>
         </div> 
-        <p>Afficher plus</p>
+       <p><strong>Afficher plus </strong></p>
       </div>
 <!-- ********************Les plus populaires**************** -->
      <div id="Les-plus-populaires">
          <h2>Les plus populaires</h2>
         <div class="MostPopular">
+            <a href="#">
             <figure>
             <img src="Projet2-Reservia/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Image Hotel le soleil du matin"  >
             <figcaption>Hôtel Le soleil du matin </figcaption>
@@ -179,12 +184,13 @@
                 <i class="fas fa-star" data-active="true"></i>
                 <i class="fas fa-star" data-active="true"></i>
                 <i class="fas fa-star" data-active="true"></i>
-                </div>
+                </div></a>
         </div>
         <div class="MostPopular">
+            <a href="#">
             <figure>
             <img src="Projet2-Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"  alt="Image Au coeur de l'eau Chambres d'hôtes" >
-            <figcaption> Au coeur de l'eau Chambres d'hôtes </figcaption>
+            <figcaption> Au coeur de l'eau <br> Chambres d'hôtes </figcaption>
             </figure>
             <p>Nuit à partir de 71&euro;</p>
                 <div class="Star">
@@ -193,9 +199,10 @@
                 <i class="fas fa-star" data-active="true"></i>
                 <i class="fas fa-star" data-active="true"></i>
                 <i class="fas fa-star" data-active="false"></i>
-                </div>
+                </div></a>
         </div>
         <div class="MostPopular">
+            <a href="#">
             <figure>
             <img src="Projet2-Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"  alt="Image Hotel tout bleu et Blanc" >
             <figcaption>Hôtel Tout bleu et Blanc</figcaption>
@@ -207,7 +214,7 @@
                 <i class="fas fa-star" data-active="true"></i>
                 <i class="fas fa-star" data-active="true"></i>
                 <i class="fas fa-star" data-active="false"></i>
-                </div>
+                </div></a>
         </div>
      </div>
  </section>
@@ -232,19 +239,19 @@
        <a href="#">
            <figure>
           <img src="Projet2-Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Image Iles du Frioul " >
-          <figcaption>Iles du Frioul </figcaption></figure></a>
+          <figcaption>Îles du Frioul </figcaption></figure></a>
    </div>
    <div class="Grande-image2">
        <a href="#">
            <figure>
            <img src="Projet2-Reservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Image Parc National des Calanques" >
-          <figcaption>Parc National des Calanques</figcaption></figure></a>
+          <figcaption>Parc National <br> des Calanques</figcaption></figure></a>
    </div>
    <div class="Normal-image3">
        <a href="#">
            <figure>
           <img src="Projet2-Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Image Notre-Dame-de-la-Garde" >
-          <figcaption>Notre-Dame-de-la-Garde</figcaption></figure></a>
+          <figcaption>Notre-Dame-<br>de-la-Garde</figcaption></figure></a>
    </div>
    <div class="Normal-image4">
        <a href="#">
