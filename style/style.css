@@ -602,7 +602,10 @@ li{
   }
   #Hebergements-Marseille figure {
     width: 20em;
-    height: 10.5em;
+    height: 10em;
+  }
+  .room figcaption{
+    padding-right: 2rem;
   }
   .room{
     padding-right: 8rem;
