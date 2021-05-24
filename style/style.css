@@ -602,7 +602,7 @@ li{
   }
   #Hebergements-Marseille figure {
     width: 20em;
-    height: 10em;
+    height: 10.5em;
   }
   .room{
     padding-right: 8rem;
@@ -653,8 +653,9 @@ li{
   #Activites figure {
     display: flex;
     flex-wrap: wrap;
-    width: 24em;
+    width: 23em;
     height: 10em;
+    margin-left: 10px;
   }
   #Activites figcaption {
     display: flex;
