@@ -600,7 +600,7 @@ li{
   }
   #Hebergements-Marseille figure {
     width: 30em;
-    height: 11em;
+    height: 10em;
   }
   #Hebergements #Hebergements-Marseille {
     margin-left: 1em;
@@ -650,7 +650,7 @@ li{
   #Activites figure {
     display: flex;
     flex-wrap: wrap;
-    width: 19.5em;
+    width: 20em;
     height: 8em;
   
   }
