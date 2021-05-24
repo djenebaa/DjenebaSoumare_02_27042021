@@ -605,7 +605,7 @@ li{
     height: 10em;
   }
   .room figcaption{
-    padding-right: 2rem;
+    width: 200px;
   }
   .room{
     padding-right: 8rem;
