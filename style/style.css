@@ -317,13 +317,16 @@ strong p {
 }
 
 /* *******************Activites Marseille*************** */
+#Activity{
+  padding-bottom: 40px;
+}
 #Activites {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  padding-left: 1em;
+  padding-left: 0;
 }
 #Activity h2{
   padding-left: 10px;
@@ -348,47 +351,59 @@ strong p {
 }
 #Activites .Grande-image2 img,
 #Activites .Grande-image1 img {
-  height: 20em;
-  width: 12em;
+  height: 22em;
+  width: 16em;
   border-radius: 1em 1em 0 0;
-}
-.Grande-image1,
-.Grande-image2 {
-  height: 20em;
-  width: 12em;
 }
 .Grande-image1 figure,
 .Grande-image2 figure {
   border-radius: 1em;
   padding-bottom: 1em;
   box-shadow: 0 0 10px grey;
-  width: 12em;
+  width: 16em;
+  height: 24.5em;
   font-weight: bold;
 }
+.Grande-image1,.Grande-image2{
+  width: 40px;
+}
 #Activites .Normal-image1 img,
-#Activites .Normal-image2 img,
-#Activites .Normal-image3 img,
 #Activites .Normal-image4 img {
   height: 10em;
-  width: 12em;
+  width: 16em;
   border-radius: 1em 1em 0 0;
 }
-.Normal-image1,
-.Normal-image2,
-.Normal-image3,
-.Normal-image4 {
-  height: 17em;
-  width: 15em;
+#Activites .Normal-image2 img,
+#Activites .Normal-image3 img{
+  height: 7em;
+  width: 16em;
+  border-radius: 1em 1em 0 0;
 }
 .Normal-image1 figure,
-.Normal-image2 figure,
-.Normal-image3 figure,
 .Normal-image4 figure {
   border-radius: 1em;
   padding-bottom: 1em;
   box-shadow: 0 0 10px grey;
-  width: 12em;
+  width: 16em;
   font-weight: bold;
+}
+.Normal-image2 figure,
+.Normal-image3 figure{
+  border-radius: 1em;
+  padding-bottom: 1em;
+  box-shadow: 0 0 10px grey;
+  width: 16em;
+  height: 9em;
+  font-weight: bold;
+}
+.Normal-image2{
+  margin-top: 25px;
+}
+.Normal-image4{
+  margin-top: -8px;
+}
+.Normal-image1,.Normal-image2,.Normal-image3,.Normal-image4{
+  width: 15px;
 }
 #Activites figcaption {
   padding-left: 10px;
@@ -485,12 +500,13 @@ li{
   #Activites figure {
     display: flex;
     flex-wrap: wrap;
-    width: 30em;
+    width: 35em;
     height: 12em;
   }
   #Activites figcaption {
     display: flex;
     align-items: center;
+    font-size: small;
   }
   #Activites .Normal-image1 img,
   #Activites .Normal-image2 img,
@@ -643,7 +659,7 @@ li{
   }
   #Activity{
     margin-right: 9px;
-    margin-left: -12px;
+    margin-left: 10px;
   }
   #Activity h2{
     margin-left: 10px;
@@ -663,6 +679,7 @@ li{
   #Activites figcaption {
     display: flex;
     align-items: center;
+    font-size: small;
   }
   #Activites .Normal-image1 img,
   #Activites .Normal-image2 img,
