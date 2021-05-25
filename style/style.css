@@ -529,27 +529,25 @@ li{
   }
 }
 /* ******************RESPONSIVE MOBILE************** */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 670px) {
   #Navigation {
-    display: flex;
-    align-items: flex-end;
-    grid-template-rows: 1fr;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
   }
-  nav {
-    display: flex;
-    flex-wrap: wrap;
+  #Navigation .logo, #Navigation .Inscription{
+    grid-area: 1/1/2/3;
+    padding-bottom: 10px;
+  }
+  #Navigation .NavBar{
+    grid-area: 2/1/3/3;
   }
   nav .logo{
-    margin-left: 5px;
-  }
-  .NavBar {
-    margin-left: 0;
-  }
-  .NavBar{
-    margin-left: 4rem;
+    margin-left: 2px;
+    width: 200px;
   }
   .NavBar a{
     padding-bottom: 1rem;
@@ -574,9 +572,11 @@ li{
     color: #0065fc;
     text-decoration: none;
     border-top: none;
-    margin-left: -5em;
-    margin-bottom: 2rem;
-    padding: 0 0 4.5rem 0;
+    padding-left: 24em;
+    width: 200px;
+    height: 9px;
+    display: flex;
+    justify-content: flex-start;
   }
   #Filtres {
     display: flex;
@@ -613,50 +613,51 @@ li{
     flex-wrap: nowrap;
     flex-direction: column;
     padding: 0 0 0 11px;
-    width: 23em;
+    width: 19em;
     margin-left: 0;
     height: 90em;
   }
   #Hebergements-Marseille figure {
-    width: 20em;
+    width: 16em;
     height: 10em;
   }
   .room figcaption{
     width: 200px;
   }
   .room{
-    padding-right: 8rem;
+    padding-right: 0rem;
     height: 14em;
+    width: 16em;
   }
   .room img {
-    width: 20em;
+    width: 17em;
     height: 7em;
   }
   #Hebergements #Les-plus-populaires {
-    margin-left: 1em;
-    width: 90%;
+    margin-left: 0;
+    width: 19em;
   }
   .MostPopular{
-    width: 95%; 
-    height: 25%;
+    width: 19em; 
+    height: 10.1em;
   }
   .MostPopular figure {
-    width: 90%;
-    height: 100%;
+    width: 19em;
+    height: 10.1em;
     display: flex;
     flex-wrap: nowrap;
   }
   .MostPopular img {
-    height: 100%;
-    width: 40%;
+    height: 10em;
+    width: 7em;
     border-radius: 1em 0 0 1em;
     border: solid 2px white;
   }
   .MostPopular p{
-    margin-left: 9rem;
+    margin-left: 7.5rem;
   }
   .MostPopular .Star{
-    margin-left: 9rem;
+    margin-left: 7.5rem;
   }
   #Activity{
     margin-right: 9px;
@@ -672,8 +673,8 @@ li{
   }
   #Activites figure {
     display: flex;
-    flex-wrap: wrap;
-    width: 23em;
+    flex-wrap: nowrap;
+    width: 19em;
     height: 10em;
     margin-left: 10px;
   }
@@ -681,7 +682,7 @@ li{
     display: flex;
     align-items: center;
     font-size: small;
-    padding-left: 5px;
+    padding-left: 0px;
   }
   #Activites .Normal-image1 img,
   #Activites .Normal-image2 img,
