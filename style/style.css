@@ -12,7 +12,6 @@ body {
 a {
   color: initial;
 }
-
 /* ****************Navigation**************** */
 nav {
   margin-top: 0;
@@ -552,7 +551,12 @@ li{
   }
 }
 /* ******************RESPONSIVE MOBILE************** */
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 650px){
+  header{
+  height: 126px;
+  width: max-content;
+  border-bottom: solid 3px rgb(221, 212, 212);
+   } 
   #Navigation {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -573,10 +577,15 @@ li{
     margin-left: 2px;
     width: 200px;
   }
-  .NavBar a{
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
-    margin-left: 2em;
+  .NavBar a {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  margin-right: 10px;
+  margin-left: -10px;
+  width: 7em;
+  padding-left: 3rem;
+  padding-right: 4rem;
   }
   .NavBar a:hover {
     text-decoration: none;
@@ -597,7 +606,7 @@ li{
     color: #0065fc;
     text-decoration: none;
     border-top: none;
-    padding-left: 24em;
+    padding-left: 25em;
     width: 200px;
     height: 9px;
     display: flex;
