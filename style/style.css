@@ -327,7 +327,7 @@ strong p {
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  padding-left: 0;
+  padding-left: 0; 
 }
 #Activity h2{
   padding-left: 10px;
@@ -353,7 +353,7 @@ strong p {
 #Activites .Grande-image2 img,
 #Activites .Grande-image1 img {
   height: 22em;
-  width: 16em;
+  width: 17em;
   border-radius: 1em 1em 0 0;
 }
 .Grande-image1 figure,
@@ -361,23 +361,30 @@ strong p {
   border-radius: 1em;
   padding-bottom: 1em;
   box-shadow: 0 0 10px grey;
-  width: 16em;
+  width: 17em;
   height: 24.5em;
   font-weight: bold;
 }
 .Grande-image1,.Grande-image2{
   width: 40px;
+ margin-left: 0px;
+}
+.Grande-image1{
+  margin-left: -5px;
+}
+.Grande-image2{
+  margin-left:-35px ;
 }
 #Activites .Normal-image1 img,
 #Activites .Normal-image4 img {
   height: 10em;
-  width: 16em;
+  width: 17em;
   border-radius: 1em 1em 0 0;
 }
 #Activites .Normal-image2 img,
 #Activites .Normal-image3 img{
   height: 7em;
-  width: 16em;
+  width: 17em;
   border-radius: 1em 1em 0 0;
 }
 .Normal-image1 figure,
@@ -385,23 +392,33 @@ strong p {
   border-radius: 1em;
   padding-bottom: 1em;
   box-shadow: 0 0 10px grey;
-  width: 16em;
+  width: 17em;
   font-weight: bold;
+  margin-left: 10px;
 }
 .Normal-image2 figure,
 .Normal-image3 figure{
   border-radius: 1em;
   padding-bottom: 1em;
   box-shadow: 0 0 10px grey;
-  width: 16em;
+  width: 17em;
   height: 9em;
   font-weight: bold;
+  margin-left: 10px;
+}
+.Normal-image1{
+  margin-left: 10px;
 }
 .Normal-image2{
   margin-top: 25px;
+  margin-left: 10px;
+}
+.Normal-image3{
+  margin-left: -20px;
 }
 .Normal-image4{
   margin-top: -8px;
+  margin-left: -20px;
 }
 .Normal-image1,.Normal-image2,.Normal-image3,.Normal-image4{
   width: 15px;
@@ -519,6 +536,12 @@ li{
     height: 13em;
     border-radius: 1em 0 0 1em;
   }
+  .Normal-image1,.Normal-image2,.Normal-image3,.Normal-image4{
+    margin: 0px;
+  }
+  .Grande-image1,.Grande-image2{
+    margin-left: -27px;
+  }
   footer {
     display: flex;
     flex-direction: column;
@@ -544,6 +567,7 @@ li{
   }
   #Navigation .NavBar{
     grid-area: 2/1/3/3;
+    margin-left: 0;
   }
   nav .logo{
     margin-left: 2px;
@@ -552,6 +576,7 @@ li{
   .NavBar a{
     padding-bottom: 1rem;
     margin-bottom: 2rem;
+    margin-left: 2em;
   }
   .NavBar a:hover {
     text-decoration: none;
@@ -694,8 +719,8 @@ li{
     height:11em;
     border-radius: 1em 0 0 1em;
   }
-  .Normal-image2{
-    margin-top: 0;
+  .Grande-image1,.Grande-image2,.Normal-image1,.Normal-image2,.Normal-image3,.Normal-image4{
+    margin: 0px;
   }
   footer {
     display: flex;
