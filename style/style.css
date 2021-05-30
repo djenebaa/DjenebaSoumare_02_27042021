@@ -168,15 +168,16 @@ p i {
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: 1fr;
   grid-template-areas: "#Hebergements-Marseille" "Les-plus-populaires";
-  margin: 1em;
+  margin-left: 5px;
+  margin-right: 1em;
 }
 #Hebergements-Marseille {
   grid-column: 1/2;
   background-color: #f2f2f2;
   border-radius: 1em;
-  height: 60em;
-  width: 30rem;
-  margin: 0 1em 0 5em;
+  height: 37.5em;
+  width: 42em;
+  margin: 0 1em 0 0 ;
   padding: 0 0 0 20px;
   display: flex;
   flex-wrap: wrap;
@@ -186,6 +187,7 @@ p i {
   display: flex;
   align-items: center;
   margin-right: 3em;
+  width: 500%;
 }
 .room {
   display: flex;
@@ -193,7 +195,7 @@ p i {
   padding: 0;
   border: solid 4px white;
   border-radius: 1em;
-  height: 15em;
+  height: 13em;
   width: 12em;
   overflow: hidden;
 }
@@ -218,7 +220,7 @@ p i {
   width: 11.1em;
 }
 .room figure {
-  height: 12em;
+  height: 10em;
   width: 12em;
   background-color: white;
   border-radius: 1em;
@@ -249,6 +251,7 @@ div .room {
 }
 strong p {
   font-weight: bold;
+  margin-top: 0px;
 }
 
 /* ****************LES PLUS POPULAIRE************* */
@@ -258,14 +261,14 @@ strong p {
   background-color: #f2f2f2;
   padding: 0 5px 0 8px;
   margin: 0;
-  height: 600px;
-  width: 500px;
+  height: 37.5em;
+  width: 27.5em;
   border-radius: 1em;
 }
 .MostPopular {
   border-radius: 1em;
-  height: 150px;
-  width: 485px;
+  height: 153px;
+  width: 402px;
   padding-bottom: 5px;
   margin-bottom: 10px;
   background-color: white;
@@ -277,8 +280,8 @@ strong p {
   border: solid 2px white;
 }
 .MostPopular figure {
-  width: 480px;
-  height: 150px;
+  width: 400px;
+  height: 153px;
   margin: 0;
   display: flex;
   flex-direction: row;
@@ -320,7 +323,7 @@ strong p {
 #Activity{
   padding-bottom: 40px;
 }
-#Activites {
+.Activites {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -331,26 +334,26 @@ strong p {
 #Activity h2{
   padding-left: 10px;
 }
-#Activites .Grande-image1 {
+.Activites .Grande-image1 {
   grid-area: 1 / 1 / 3 / 2;
 }
-#Activites .Normal-image1 {
+.Activites .Normal-image1 {
   grid-area: 1 / 2 / 2 / 3;
 }
-#Activites .Normal-image2 {
+.Activites .Normal-image2 {
   grid-area: 2 / 2 / 3 / 3;
 }
-#Activites .Grande-image2 {
+.Activites .Grande-image2 {
   grid-area: 1 / 3 / 3 / 4;
 }
-#Activites .Normal-image3 {
+.Activites .Normal-image3 {
   grid-area: 1 / 4 / 2 / 5;
 }
-#Activites .Normal-image4 {
+.Activites .Normal-image4 {
   grid-area: 2 / 4 / 3 / 5;
 }
-#Activites .Grande-image2 img,
-#Activites .Grande-image1 img {
+.Activites .Grande-image2 img,
+.Activites .Grande-image1 img {
   height: 22em;
   width: 17em;
   border-radius: 1em 1em 0 0;
@@ -361,27 +364,33 @@ strong p {
   padding-bottom: 1em;
   box-shadow: 0 0 10px grey;
   width: 17em;
-  height: 24.5em;
+  height: 24em;
   font-weight: bold;
 }
 .Grande-image1,.Grande-image2{
   width: 40px;
  margin-left: 0px;
 }
-.Grande-image1{
-  margin-left: -5px;
+div.Grande-image1{
+  margin-left: 0px;
+  padding-right: 15px;
+  width: 315px;
+  height: 470px;
 }
-.Grande-image2{
-  margin-left:-35px ;
+div.Grande-image2{
+  margin-left:-40px ;
+  padding-right: 15px;
+  width: 315px;
+  height: 470px;
 }
-#Activites .Normal-image1 img,
-#Activites .Normal-image4 img {
+.Activites .Normal-image1 img,
+.Activites .Normal-image4 img {
   height: 10em;
   width: 17em;
   border-radius: 1em 1em 0 0;
 }
-#Activites .Normal-image2 img,
-#Activites .Normal-image3 img{
+.Activites .Normal-image2 img,
+.Activites .Normal-image3 img{
   height: 7em;
   width: 17em;
   border-radius: 1em 1em 0 0;
@@ -392,6 +401,7 @@ strong p {
   padding-bottom: 1em;
   box-shadow: 0 0 10px grey;
   width: 17em;
+  height: 11.5em;
   font-weight: bold;
   margin-left: 10px;
 }
@@ -405,24 +415,32 @@ strong p {
   font-weight: bold;
   margin-left: 10px;
 }
-.Normal-image1{
-  margin-left: 10px;
+div.Normal-image1{
+  margin-left: 0px;
+  width: 300px;
+  height: 232px;
 }
-.Normal-image2{
-  margin-top: 25px;
-  margin-left: 10px;
+div.Normal-image2{
+  margin-top: 5px;
+  margin-left: 0px;
+  width: 300px;
+  height: 200px;
 }
-.Normal-image3{
+div.Normal-image3{
   margin-left: -20px;
+  width: 300px;
+  height: 200px;
 }
-.Normal-image4{
-  margin-top: -8px;
+div.Normal-image4{
+  margin-top: -34px;
   margin-left: -20px;
+  width: 300px;
+  height: 232px;
 }
 .Normal-image1,.Normal-image2,.Normal-image3,.Normal-image4{
   width: 15px;
 }
-#Activites figcaption {
+.Activites figcaption {
   padding-left: 10px;
 }
 /* *****************FOOTER****************************** */
@@ -496,51 +514,74 @@ li{
   #Hebergements {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-between;
   }
-  #Hebergements #Les-plus-populaires {
-    margin-left: 4em;
-    margin-top: 2em;
+  #Hebergements #Hebergements-Marseille {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 0 0 0 11px;
+    width: 27.5em;
+    margin-left: 0;
+    height: 90em;
+    margin-left: 5em;
   }
-  #Hébergements #Hebergements-Marseille {
-    margin-left: 1em;
+  .room{
+    padding-right: 0rem;
+    height: 14em;
+    width: 24em;
+  }
+  .room img {
+    width: 24em;
+    height: 7em;
+  }
+  #Hebergements-Marseille figure {
+    width: 25em;
+    height: 10em;
+  }
+  #Hebergements #Les-plus-populaires {
+    margin-left: 5em;
+    margin-top: 2em;
+    margin-bottom: 20px;
   }
   #Activity {
     margin-left: 5px;
   }
-  #Activites {
+  .Activites {
     display: flex;
     flex-direction: column;
     padding-bottom: 5px;
   }
-  #Activites figure {
+  .Activites div{
+    height: 250px;
+    width: 600px;
+    margin:0px;
+  }
+  .Activites figure {
     display: flex;
     flex-wrap: wrap;
     width: 35em;
     height: 12em;
   }
-  #Activites figcaption {
+  .Activites figcaption {
     display: flex;
     align-items: center;
     font-size: small;
   }
-  #Activites .Normal-image1 img,
-  #Activites .Normal-image2 img,
-  #Activites .Normal-image3 img,
-  #Activites .Normal-image4 img,
-  #Activites .Grande-image1 img,
-  #Activites .Grande-image2 img {
+  .Activites .Normal-image1 img,
+  .Activites .Normal-image2 img,
+  .Activites .Normal-image3 img,
+  .Activites .Normal-image4 img,
+  .Activites .Grande-image1 img,
+  .Activites .Grande-image2 img {
     width: 20em;
     height: 13em;
     border-radius: 1em 0 0 1em;
   }
-  .Normal-image1,.Normal-image2,.Normal-image3,.Normal-image4{
-    margin: 0px;
-  }
-  .Grande-image1,.Grande-image2{
-    margin-left: -27px;
-  }
+div .Grande-image2,div .Grande-image1{
+  margin-left: -27px;
+}
   footer {
     display: flex;
     flex-direction: column;
@@ -639,17 +680,18 @@ li{
   #Hebergements {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-between;
   }
-  #Hebergements-Marseille {
+ #Hebergements #Hebergements-Marseille {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    padding: 0 0 0 11px;
-    width: 19em;
-    margin-left: 0;
+    padding: 0;
+    width: 20em;
+    margin-left: 2em;
     height: 90em;
+    background-color: transparent;
   }
   #Hebergements-Marseille figure {
     width: 16em;
@@ -662,14 +704,17 @@ li{
     padding-right: 0rem;
     height: 14em;
     width: 16em;
+    box-shadow: 0 0 10px grey;
   }
   .room img {
     width: 17em;
     height: 7em;
   }
   #Hebergements #Les-plus-populaires {
-    margin-left: 0;
+    margin-left: 1em;
     width: 19em;
+    margin-bottom: 20px;
+    border-radius: 0;
   }
   .MostPopular{
     width: 19em; 
@@ -700,41 +745,46 @@ li{
   #Activity h2{
     margin-left: 10px;
   }
-  #Activites {
+  .Activites {
     display: flex;
     flex-direction: column;
     padding-bottom: 5px;
+    margin-left: 8px;
   }
-  #Activites figure {
+  .Activites div{
+    width: 315px;
+    height: 200px;
+    margin:0;
+  }
+  .Activites figure {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 19em;
     height: 10em;
     margin-left: 10px;
   }
-  #Activites figcaption {
+  .Activites figcaption {
     display: flex;
     align-items: center;
     font-size: small;
-    padding-left: 0px;
+    padding-left: 5px;
   }
-  #Activites .Normal-image1 img,
-  #Activites .Normal-image2 img,
-  #Activites .Normal-image3 img,
-  #Activites .Normal-image4 img,
-  #Activites .Grande-image1 img,
-  #Activites .Grande-image2 img {
-    width: 9em;
-    height:11em;
-    border-radius: 1em 0 0 1em;
+  .Activites .Normal-image1 img,
+  .Activites .Normal-image2 img,
+  .Activites .Normal-image3 img,
+  .Activites .Normal-image4 img,
+  .Activites .Grande-image1 img,
+  .Activites .Grande-image2 img {
+    width: 19em;
+    height:8em;
+    border-radius: 1em 1em 0 0;
   }
-  .Grande-image1,.Grande-image2,.Normal-image1,.Normal-image2,.Normal-image3,.Normal-image4{
-    margin: 0px;
-  }
+
   footer {
     display: flex;
     justify-content: space-between;
     font-size: 10px;
+    width: 47em;
   }
   
 }
