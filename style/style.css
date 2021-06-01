@@ -143,12 +143,23 @@ div .bouton-Filtres {
 }
 .bouton-Filtres i {
   background-color: #deebff;
-  padding: 11px;
+  padding: 7px;
   color: #0065fc;
   border-radius: 1rem;
   overflow: hidden;
-  margin: -1px 0 -1px -1px;
+  margin: 0;
 }
+.Cercle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  background-color: #deebff;
+  border:5px solid #deebff;
+  border-radius: 50%;
+}
+
 .bouton-Filtres span {
   display: flex;
   align-items: center;
@@ -511,6 +522,9 @@ li{
     margin-left: -8em;
     padding-bottom: 2rem;
   }
+  .bouton-Filtres :hover{
+    color: grey;
+  }
   #Hebergements {
     display: flex;
     flex-wrap: wrap;
@@ -660,6 +674,9 @@ div .Grande-image2,div .Grande-image1{
   div .bouton-Filtres {
     display: flex;
     flex-wrap: wrap;
+  }
+  .bouton-Filtres :hover{
+    color: grey;
   }
   .Logoloupe [data-active="false"]{
     color: white;
